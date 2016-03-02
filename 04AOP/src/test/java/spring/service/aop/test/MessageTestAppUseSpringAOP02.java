@@ -19,8 +19,8 @@ public class MessageTestAppUseSpringAOP02 {
 		//		new ClassPathXmlApplicationContext("/config/messageservice04.xml");
 		//		new ClassPathXmlApplicationContext("/config/messageservice05.xml");
 		//		new ClassPathXmlApplicationContext("/config/messageservice06.xml");
-				new ClassPathXmlApplicationContext("/config/messageservice07.xml");			
-		//		new ClassPathXmlApplicationContext("/config/messageservice08.xml");
+		//		new ClassPathXmlApplicationContext("/config/messageservice07.xml");			
+				new ClassPathXmlApplicationContext("/config/messageservice08.xml");
 				
 		//==> IoC Container 로 부터 Look Up 한 인스턴스는 ProxyFactoryBean 객체가 생성해준 
 		//==> Message interface 구현한 Dynamic Proxy
@@ -29,7 +29,7 @@ public class MessageTestAppUseSpringAOP02 {
 		//==> 실행방법
 		//::1. 인자 : String 전달
 	    message.setMessage("Hello");
-	    //::2. 인자 : null 전달 : ThrowsAdvice 동작확인
+	    //::2. 인자 : nul45645l 전달 : ThrowsAdvice 동작확인
 		//message.setMessage(null);
 	    
 	    System.out.println("\n\n+++++++++++++++++++++++++++++++++++++++++++++\n\n");
