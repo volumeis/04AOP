@@ -21,6 +21,7 @@
 	<aop:aspectj-autoproxy/>
 	
 	<!-- 1. 선언적으로 Point cut / Advice 정의 -->
+	<!-- 
 	<aop:config>
 		<aop:aspect ref="pojoAspect">
 			<aop:pointcut expression="execution(* *.getMessage(..))" id="work"/>
@@ -30,16 +31,16 @@
 			<aop:after-throwing		pointcut-ref="work" method="afterThrowing"	throwing = "throwable"/>
 		</aop:aspect>
 	</aop:config>
-	
+	 -->
 	<!-- 2. 선언적으로 Point cut / Advice 정의 -->
-	<!-- 
+	 
 	<aop:config>
 		<aop:aspect ref="pojoAspect">
 			<aop:before 			pointcut="execution(* *.getMessage(..))" method="before"/>
 			<aop:after-returning	pointcut="within(spring.service.aop..*)" method="afterReturning" returning = "returnValue"/>
-			<aop:around				pointcut="excution(* spring.service.aop.*.*(..))" method="invoke"/>
+			<aop:around				pointcut="execution(* spring.service.aop.*.*(..))" method="invoke"/>
 			<aop:after-throwing		pointcut="execution(public * *(..))" method="afterThrowing"	throwing = "throwable"/>
 		</aop:aspect>
 	</aop:config>
-	 -->
+	
 </beans>
